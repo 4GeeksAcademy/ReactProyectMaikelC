@@ -10,3 +10,105 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body{
+    background-color: rgb(252, 210, 210);
+}
+
+navbar-brand{
+  margin-top: 0;
+    width: 10px;
+    height: 10px;
+}
+
+.content{
+    background-color: rgb(255, 215, 215);
+    margin-top: 20px; 
+    display: grid; 
+    border-radius:20px;
+    height: 300px;
+    width: 80%;
+    border: 4px solid black;
+}
+
+
+/** estilos componente card*/
+.card {
+    padding: 0;
+    width: 18rem;
+    margin: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px;
+    border: 3px solid black;
+  }
+
+  .custom-icon {
+    background-color: black;
+    box-shadow: 20% black;
+  }
+  
+  
+  .card-img-top {
+    width: 100%;
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 100%;
+  }
+  
+  .card-title, .card-text {
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    align-self: center;
+  }
+
+  .logo{
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    mix-blend-mode: darken;
+    
+  }
+
+  .footer {
+    background-color: #abacaf;
+    padding: 1rem;
+    text-align: center;
+    border-top: 3px solid black;
+  }
+  
+  .github-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    mix-blend-mode: darken;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .footer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
