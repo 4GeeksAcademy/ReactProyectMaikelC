@@ -2,9 +2,9 @@ import React from 'react';
 
 const Content = () => {
   return (
-    <div className="content container-fluid" style={{}}>
+    <div className="content container" >
       <h1>Welcome to My Brunch</h1>
-      <p style={{ maxWidth: '100%', overflowWrap: 'break-word' }}>
+      <p style={{ maxWidth: '100%', overflowWrap:'break-word'}}>
         Brunch being a custom spread throughout the world, which adapts to the
         palate and foods of each region, the brunch menu varies depending on the
         country and even changes from one restaurant to another. The origin of

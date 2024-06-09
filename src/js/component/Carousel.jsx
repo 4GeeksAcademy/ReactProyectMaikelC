@@ -41,6 +41,19 @@ const Carousel = () => {
     }
   ];
 
+  const getColumnSize = (size) => {
+    switch (size) {
+      case "lg":
+        return "col-lg-4";
+      case "md":
+        return "col-md-6";
+      case "sm":
+        return "col-sm-12";
+      default:
+        return "col-12";
+    }
+  };
+
   const chunkSize = 3;
   const cardChunks = [];
 
@@ -53,9 +66,9 @@ const Carousel = () => {
       <div className="carousel-inner">
         {cardChunks.map((chunk, index) => (
           <div className={`carousel-item ${index === 0 ? "active" : ""}`} key={index}>
-            <div className="d-flex justify-content-center">
+            <div className="row">
               {chunk.map((card, idx) => (
-                <div className="col-md-4" key={idx}>
+                <div className={`${getColumnSize("lg")} ${getColumnSize("md")} ${getColumnSize("sm")}`} key={idx}>
                   <Card
                     title={card.title}
                     description={card.description}
@@ -69,7 +82,7 @@ const Carousel = () => {
         ))}
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span className="carousel-control-prev-icon custom" aria-hidden="true"></span>
+        <span className="carousel-control-prev-icon custom-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Previous</span>
       </button>
       <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
